@@ -44,7 +44,7 @@ The .NET Web API app is set to use SpaProxy, so running the API project will run
 
 ```
 Nikolay-Tonchev-employees/
-├── WebAPI/        # .NET solution
-├── Client/       # React app (bonus UI)
+├── WebAPI/        
+├── Client/        
 └── README.md
 ```
