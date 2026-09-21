@@ -38,7 +38,7 @@ start and end date of the overlapping period count as days worked together.
 
 ## Running it
 
-The .NET Web API app is set to use SpaProxy, so running the API project will run the React on as well.
+The .NET Web API app is set to use SpaProxy, so running the API project will run the React on as well. You will however need to run `npm install` in order to install the required dependencies.
 
 ## Project structure
 

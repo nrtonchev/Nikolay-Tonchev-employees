@@ -52,9 +52,9 @@ public static class DataExtractor
         {
             var projectId = group.ProjectId;
             var tasks = group.Records;
-            if(tasks.Count() > 1)
+            if(tasks.Count > 1)
             {
-                FindLongestRunningPair(projectId, tasks, ref pairCollection);
+                FindLongestRunningPair(projectId, tasks, pairCollection);
             }
         }
         
@@ -123,11 +123,11 @@ public static class DataExtractor
 
     private static void FindLongestRunningPair(int projectId, 
         List<EmployeeTask> tasks, 
-        ref Dictionary<EmployeePairKey, int> pairCollection)
+        Dictionary<EmployeePairKey, int> pairCollection)
     {
-        for(var i = 0; i < tasks.Count(); i++)
+        for(var i = 0; i < tasks.Count; i++)
         {
-            for(var j = i + 1; j < tasks.Count(); j++)
+            for(var j = i + 1; j < tasks.Count; j++)
             {
                 if (tasks[i].EmpId == tasks[j].EmpId)
                 {
